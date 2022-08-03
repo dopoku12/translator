@@ -27,14 +27,13 @@ const Form = () => {
                         setUserInput(e.target.value)
                 }
             />
-            <button>
+            <button className="BsArrow-btn">
                 <BsArrowLeftRight className="BsArrow" size={20} />
             </button>
             <textarea id="output-box"
                 placeholder=' outPut here'
                 value={outPut}
             />
-
 
         </form>
     );

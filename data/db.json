@@ -1,0 +1,155 @@
+{
+  "AFV": [
+    {
+      "id": 1,
+      "term": "bear market",
+      "definition": "The economy is jih lunchin and a lot of people are blown."
+    },
+
+    {
+      "id": 2,
+      "term": "blue chip",
+      "definition": "Companies that have been making money for a brick."
+    },
+
+    {
+      "id": 3,
+      "term": "bull market",
+      "definition": "When the economy is it’s bag. Particularly the stock market."
+    },
+
+    {
+      "id": 4,
+      "term": "capital Gain(Loss)",
+      "definition": "The difference of what you copped an asset for and what you sold for it."
+    },
+
+    {
+      "id": 5,
+      "term": "dividend",
+      "definition": "Deadass when a company pays its profits to its investor"
+    },
+
+    {
+      "id": 6,
+      "term": "dollar Cost Averaging",
+      "definition": "Not investing all your money off rip, but putting in little by little at a time."
+    },
+
+    {
+      "id": 7,
+      "term": "equities",
+      "definition": "Whole time, just a another word for “stocks”."
+    },
+
+    {
+      "id": 8,
+      "term": "stock",
+      "definition": "You cop some ownership of a company."
+    },
+
+    {
+      "id": 9,
+      "term": "asset",
+      "definition": "What bammas buy when they want more money without doing more work."
+    },
+
+    {
+      "id": 10,
+      "term": "liabilities",
+      "definition": "The things you buy to look cool but jah like makes someone else rich. And you deadass broke."
+    }
+  ],
+
+  "Standard": [
+    {
+      "id": 0,
+      "term": "Accounting",
+      "definition": "Explains what a business does with its money"
+    },
+
+    {
+      "id": 1,
+      "term": "Assets",
+      "definition": "Benefits you tomorrow by buying it today"
+    },
+
+    {
+      "id": 2,
+      "term": "Liabilities",
+      "definition": "You owe! Don’t forget to pay up."
+    },
+
+    {
+      "id": 3,
+      "term": "Balance Sheet",
+      "definition": "What the business owns, what the business owes and what the owners get to keep"
+    },
+
+    {
+      "id": 4,
+      "term": "Income Statement",
+      "definition": "Seeing all the money you made be chopped by the money you had to spend to make it."
+    },
+
+    {
+      "id": 5,
+      "term": "Accounting Equation",
+      "definition": "Just like 2+2= 4, Liabilities + Equity= Assets"
+    },
+
+    {
+      "id": 6,
+      "term": "Stockholders Equity",
+      "definition": "How much skin in the game an investor has in a business"
+    },
+
+    {
+      "id": 7,
+      "term": "Revenue",
+      "definition": "A world where money is made and expenses are a figment of your imagination."
+    },
+
+    {
+      "id": 8,
+      "term": "Expense",
+      "definition": "Money spend to operate a business. Usually things you buy that will be used up in a year or less"
+    },
+
+    {
+      "id": 9,
+      "term": "Retained Earnings",
+      "definition": "A company could give its profit to you but instead will hoard it to itself."
+    },
+
+    {
+      "id": 10,
+      "term": "Accounts Receivable",
+      "definition": "Service/Work is completed but instead of being paid now, you’re paid later."
+    },
+
+    {
+      "id": 11,
+      "term": "Accounts Payable",
+      "definition": "When work gets do for you but you pay those people later instead of now."
+    },
+
+    {
+      "id": 12,
+      "term": "COGS( Cost of Goods Sold)",
+      "definition": "The money spent to directly make the products you sold. Think the ingredients needed to make a delicious cake."
+    },
+
+    {
+      "id": 13,
+      "term": "Debit",
+      "definition": "A debit INCREASES assets and DECREASES liabilities & equity."
+    },
+
+    {
+      "id": 14,
+      "term": "Credit",
+      "definition": "A credit INCREASES liabilities & equity and  DECREASES asset"
+    }
+  ]
+}

@@ -1,3 +1,50 @@
+form {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+form #input-box, form #output-box {
+  box-shadow: #373333 8px 5px 10px 1px;
+  height: 30vh;
+  width: 40vw;
+  z-index: 65;
+  border: none;
+  font-size: 1.8em;
+}
+form .BsArrow-btn {
+  margin: 3%;
+  box-shadow: none;
+  height: 30px;
+  width: 50px;
+  z-index: 65;
+  border: none;
+  font-size: 0.5em;
+  background-color: transparent;
+  cursor: pointer;
+}
+@media all and (max-width: 605px) {
+  form {
+    margin-top: 20%;
+  }
+  form #input-box, form #output-box {
+    box-shadow: #373333 8px 5px 10px 1px;
+    height: 30vh;
+    width: 40vw;
+    z-index: 65;
+    border: none;
+    font-size: 1.2em;
+  }
+  form #output-box {
+    box-shadow: #373333 8px 5px 10px 1px;
+    height: 30vh;
+    width: 40vw;
+    z-index: 65;
+    border: none;
+    font-size: 1.2em;
+  }
+}
 * {
   padding: 0%;
   margin: 0%;
@@ -5,31 +52,10 @@
 
 .App {
   background-image: linear-gradient(#b4f8c8, #a0e7e5);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-.App main {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-form #input-box {
-  box-shadow: #a29090 4px 10px 20px 10px;
-  height: 50vh;
-  width: 40vw;
-  background-color: aliceblue;
-}
-form #output-box {
-  box-shadow: #a29090 4px 10px 20px 10px;
-  height: 50vh;
-  width: 40vw;
-}
-
-.BsArrow {
-  z-index: 65;
-  position: sticky;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=index.css.map */

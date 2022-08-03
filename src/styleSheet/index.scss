@@ -1,3 +1,5 @@
+@use "./form";
+
 * {
   padding: 0%;
   margin: 0%;
@@ -5,30 +7,10 @@
 
 .App {
   background-image: linear-gradient(#b4f8c8, #a0e7e5);
-  background-size: cover;
-  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
   background-repeat: no-repeat;
+  height: 100vh;
   main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-}
-form {
-  #input-box {
-    box-shadow: rgb(162, 144, 144) 4px 10px 20px 10px;
-    height: 50vh;
-    width: 40vw;
-    background-color: aliceblue;
-  }
-  #output-box {
-    box-shadow: rgb(162, 144, 144) 4px 10px 20px 10px;
-    height: 50vh;
-    width: 40vw;
-  }
-}
-
-.BsArrow {
-  z-index: 65;
-  position: sticky;
 }
