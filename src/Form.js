@@ -33,7 +33,9 @@ const Form = () => {
             <textarea id="output-box"
                 placeholder=' outPut here'
                 readOnly
-                value={outPut}
+
+                value={!pending ? outPut : errorHandler}
+
             />
 
 
