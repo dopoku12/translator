@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-const useFetchApi = (userInput, submit) => {
-    const [outPut, setoutPut] = useState('')
+
+const useFetchApi = () => {
+    const [outPut, setoutPut] = useState([])
     const [pending, setPending] = useState(true)
     const [errorHandler, setErrorHandler] = useState(null)
 
@@ -10,7 +11,7 @@ const useFetchApi = (userInput, submit) => {
             fetch('http://localhost:8000/DMV')
                 .then(res => {
                     if (!res.ok) {
-                        throw Error('...loading')
+                        throw Error('Something went wrong')
                     }
                     console.log(res);
                     return res.json()
@@ -23,11 +24,11 @@ const useFetchApi = (userInput, submit) => {
                 .catch(err => {
                     setErrorHandler(err.message)
                 })
-        }, [submit]);
+        }, []);
 
     console.log('setData:', outPut);
 
-    return { outPut, errorHandler, pending, }
+    return { outPut, pending, errorHandler, }
 }
 
 export default useFetchApi;

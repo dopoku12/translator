@@ -1,20 +1,15 @@
-import useFetchApi from "./customeHooks/Fetch";
+
 import { useState } from "react";
 import { BsArrowLeftRight } from "react-icons/bs"
 const Form = () => {
     const [userInput, setUserInput] = useState('');
     const [submit, setSubmit] = useState(null)
-
-
     function handleSubmit(e) {
         e.preventDefault()
         !submit ?
             setSubmit(true) :
             setSubmit(false)
     }
-
-    const { outPut, errorHandler, pending, } = useFetchApi(userInput)
-
     return (
         <form className="form" onSubmit={handleSubmit}>
 
@@ -27,19 +22,16 @@ const Form = () => {
                         setUserInput(e.target.value)
                 }
             />
+
             <button className="BsArrow-btn">
                 <BsArrowLeftRight className="BsArrow" size={20} />
             </button>
+
             <textarea id="output-box"
                 placeholder=' outPut here'
                 readOnly
-
-                value={!pending ? outPut : errorHandler}
-
+                value={''}
             />
-
-
-
         </form>
     );
 }
