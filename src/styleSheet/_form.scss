@@ -1,5 +1,3 @@
-@use "./mixAndVar";
-
 @mixin inAndOut($height, $width, $boxShadow, $fontSize) {
   box-shadow: $boxShadow;
   height: $height;
@@ -9,12 +7,16 @@
   font-size: $fontSize;
 }
 
-form {
-  margin-top: 10%;
+@mixin flex($direction) {
   display: flex;
-  flex-direction: row;
+  flex-direction: $direction;
   align-items: center;
   justify-content: center;
+}
+
+form {
+  margin-top: 10%;
+  @include flex(row);
 
   #input-box {
     @include inAndOut(30vh, 40vw, rgb(55, 51, 51) 8px 5px 10px 1px, 1.8em);

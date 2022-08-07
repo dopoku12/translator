@@ -8,12 +8,12 @@ function App() {
 
       <main>
         <Form />
+
+        <section>
+          <Display />
+        </section>
+
       </main>
-
-      <section>
-        <Display />
-      </section>
-
 
       <footer>
 
