@@ -1,4 +1,3 @@
-import useFetchApi from "./customeHooks/Fetch";
 
 const Display = () => {
 
