@@ -1,5 +1,5 @@
 import Form from "./Form";
-
+import Display from "./Display";
 
 function App() {
   return (
@@ -10,8 +10,9 @@ function App() {
         <Form />
       </main>
 
-
-
+      <section>
+        <Display />
+      </section>
 
 
       <footer>

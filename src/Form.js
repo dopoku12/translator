@@ -19,7 +19,7 @@ const Form = () => {
         <form className="form" onSubmit={handleSubmit}>
 
             <textarea type="input" id="input-box"
-                placeholder=' Enter Financial term'
+                placeholder=' Enter Financial term ex:Stocks'
                 required
                 value={userInput}
                 onChange={
@@ -32,8 +32,11 @@ const Form = () => {
             </button>
             <textarea id="output-box"
                 placeholder=' outPut here'
+                readOnly
                 value={outPut}
             />
+
+
 
         </form>
     );

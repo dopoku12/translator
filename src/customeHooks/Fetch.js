@@ -7,11 +7,12 @@ const useFetchApi = (userInput, submit) => {
     useEffect(
         () => {
 
-            fetch()
+            fetch('http://localhost:8000/DMV')
                 .then(res => {
                     if (!res.ok) {
-                        throw Error('')
+                        throw Error('error')
                     }
+                    console.log(res);
                     return res.json()
                 }
                 )
