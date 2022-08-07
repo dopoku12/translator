@@ -1,4 +1,12 @@
 @use "./form";
 ul {
   @include flex(column);
+  cursor: pointer;
+}
+li {
+  list-style: none;
+
+  &:hover p {
+    box-shadow: 2px 2px 2px 2px;
+  }
 }
