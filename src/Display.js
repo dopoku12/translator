@@ -1,4 +1,6 @@
 const Display = ({ listItems }) => {
+    console.log('listItems:', listItems);
+
     return (
         <ul>
             {

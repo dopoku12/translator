@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { BsArrowLeftRight } from "react-icons/bs"
-import Display from "../Display";
+import Display from "./Display";
 
-const Data = () => {
-    const [dmvDef, setDmvDef] = useState([
+function Data() {
+    const dmvDef = [
         {
             id: 1,
             term: "bear market",
@@ -134,7 +134,7 @@ const Data = () => {
             id: 19,
             term: " Long Term Investment Strategy",
             dMVDefinition: "Not lookin’ for an easy lick but some tuff growth over time",
-            definition: "A longterminvestment strategy is one that’s focused on sustained growth over many years rather than quick wins and immediate profits. A long-term investment strategy is consistent with a buy-and-hold strategy, where you put your money into certain investments and allow them to grow for many years."
+            definition: "A long term investment strategy is one that’s focused on sustained growth over many years rather than quick wins and immediate profits. A long-term investment strategy is consistent with a buy-and-hold strategy, where you put your money into certain investments and allow them to grow for many years."
         },
 
         {
@@ -145,7 +145,7 @@ const Data = () => {
             dMVDefinition: "The price of coppin a stock at the current moment",
             definition: "Market price refers to the price at which an asset can be bought and sold on the open market. The market price of any given asset is based on current market factors, including supply and demand. As supply decreases and demand increases, the market price of the asset also increases."
         }
-    ]);
+    ]
 
     const [standardDef, setStandardDef] = useState(
         [
@@ -264,11 +264,12 @@ const Data = () => {
         setDmvDef(change)
     }
 
+
+    console.log('words:', words);
     return (
 
-        <div>
-            <Display listItems={words} />
-        </div>
+        <Display listItems={dmvDef} />
+
     )
 }
 
