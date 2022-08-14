@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { BsArrowLeftRight } from "react-icons/bs"
-import Display from "./Display";
+import Display from '../Display'
+
 
 function Data() {
-    const dmvDef = [
+    const [dmvDef, setDmvDef] = useState([
         {
             id: 1,
             term: "bear market",
@@ -146,7 +147,7 @@ function Data() {
             definition: "Market price refers to the price at which an asset can be bought and sold on the open market. The market price of any given asset is based on current market factors, including supply and demand. As supply decreases and demand increases, the market price of the asset also increases."
         }
     ]
-
+    )
     const [standardDef, setStandardDef] = useState(
         [
             {
@@ -255,22 +256,22 @@ function Data() {
             </li>
         )
     })
+
     function convert(id) {
         const change = dmvDef.map((i) => {
-            id === i.id ?
-                { ...i.id, statues: true }
-                : { ...i.id, statues: false }
+            return (
+                id === i.id ?
+                    { ...i.id, statues: true }
+                    : { ...i.id, statues: false })
         })
         setDmvDef(change)
     }
 
 
-    console.log('words:', words);
     return (
 
-        <Display listItems={dmvDef} />
+        <Display listItems={words} />
 
     )
 }
-
 export default Data;

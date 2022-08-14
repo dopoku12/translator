@@ -1,15 +1,13 @@
 import Form from "./Form";
-import Display from "./Display";
+import Data from "./components/Data";
 
 function App() {
   return (
     <div className="App">
       <Form />
       <main>
-
-
         <section>
-          <Display />
+          <Data />
         </section>
 
       </main>

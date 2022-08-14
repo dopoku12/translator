@@ -1,5 +1,5 @@
 const Display = ({ listItems }) => {
-    console.log('listItems:', listItems);
+    console.log('list:', listItems);
 
     return (
         <ul>
