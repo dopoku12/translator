@@ -21,8 +21,9 @@ const Display = ({ dmvDef, convertFun }) => {
                                 <h2>
                                     {
                                         i.statues ?
-                                            i.standard :
                                             i.dmv
+                                            :
+                                            i.standard
                                     }
                                 </h2>
                             </button>
