@@ -1,26 +1,35 @@
-import useFetchApi from "./customeHooks/Fetch";
-const Display = () => {
-    const { pending, errorHandler, outPut } = useFetchApi()
-    const listItems = outPut.map((i) => {
-        return (
-            <li key={i.id}>
 
-                <h1>{i.term}:</h1>
-                <p>{i.definition}</p><br />
-
-            </li>
-        )
-    }
-    )
+const Display = ({ dmvDef, convertFun }) => {
     return (
-        <ul>
-            {pending && <h1>...Loading</h1>}
-            {
-                listItems
-            }
-
-            <h1>{errorHandler}</h1>
-
+        <ul>{
+            dmvDef.map((i) => {
+                return (
+                    <li key={i.id}>
+                        <h1>
+                            {i.term}
+                        </h1>
+                        <p>
+                            {i.statues
+                                ?
+                                i.definition
+                                :
+                                i.dMVDefinition
+                            }
+                        </p>
+                        {
+                            <button className=".BsArrow-btn " onClick={() => convertFun(i.id)}>
+                                <h2>
+                                    {
+                                        i.statues ?
+                                            i.standard :
+                                            i.dmv
+                                    }
+                                </h2>
+                            </button>
+                        }
+                    </li>
+                )
+            })}
         </ul>
     )
 }
