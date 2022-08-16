@@ -1,4 +1,4 @@
-import Form from "./Form";
+// import Form from "./Form";
 import Data from "./components/Data";
 
 function App() {
