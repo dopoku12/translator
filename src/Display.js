@@ -1,7 +1,5 @@
 
-const Display = ({ dmvDef, convertFun, revertFun }) => {
-
-    console.log(dmvDef[0].standard);
+const Display = ({ dmvDef, convertFun }) => {
     return (
         <ul>{
             dmvDef.map((i) => {

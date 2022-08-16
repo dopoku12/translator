@@ -259,20 +259,20 @@ function Data() {
     }
 
 
-    function revert(id) {
-        const change = dmvDef.map(i =>
-            id === i.id ?
-                { ...i, statues: false }
-                :
-                { ...i, statues: true }
+    // function revert(id) {
+    //     const change = dmvDef.map(i =>
+    //         id === i.id ?
+    //             { ...i, statues: false }
+    //             :
+    //             { ...i, statues: true }
 
-        )
-        setDmvDef(change)
-    }
+    //     )
+    //     setDmvDef(change)
+    // }revertFun={revert}
 
     return (
 
-        <Display dmvDef={dmvDef} convertFun={convert} revertFun={revert} />
+        <Display dmvDef={dmvDef} convertFun={convert} />
 
     )
 }
