@@ -1,11 +1,37 @@
-const Display = ({ listItems }) => {
-    console.log('list:', listItems);
 
+const Display = ({ dmvDef, convertFun, revertFun }) => {
+
+    console.log(dmvDef[0].standard);
     return (
-        <ul>
-            {
-                listItems
-            }
+        <ul>{
+            dmvDef.map((i) => {
+                return (
+                    <li key={i.id}>
+                        <h1>
+                            {i.term}
+                        </h1>
+                        <p>
+                            {i.statues
+                                ?
+                                i.definition
+                                :
+                                i.dMVDefinition
+                            }
+                        </p>
+                        {
+                            <button className=".BsArrow-btn " onClick={() => convertFun(i.id)}>
+                                <h2>
+                                    {
+                                        i.statues ?
+                                            i.standard :
+                                            i.dmv
+                                    }
+                                </h2>
+                            </button>
+                        }
+                    </li>
+                )
+            })}
         </ul>
     )
 }

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BsArrowLeftRight } from "react-icons/bs"
 import Display from '../Display'
 
 
@@ -140,137 +139,140 @@ function Data() {
 
         {
             id: 20,
-
-
             term: "Market Price",
             dMVDefinition: "The price of coppin a stock at the current moment",
             definition: "Market price refers to the price at which an asset can be bought and sold on the open market. The market price of any given asset is based on current market factors, including supply and demand. As supply decreases and demand increases, the market price of the asset also increases."
         }
-    ]
+    ].map(i => { return ({ ...i, standard: 'Standard' }) })
+        .map(i => { return ({ ...i, dmv: 'DMV' }) })
+        .map(i => { return ({ ...i, statues: true }) })
     )
-    const [standardDef, setStandardDef] = useState(
-        [
-            {
-                id: 0,
-                term: "Accounting",
-                definition: "Explains what a business does with its money"
-            },
 
-            {
-                id: 1,
-                term: "Assets",
-                definition: "Benefits you tomorrow by buying it today"
-            },
+    // const [standardDef, setStandardDef] = useState(
+    //     [
+    //         {
+    //             id: 0,
+    //             term: "Accounting",
+    //             definition: "Explains what a business does with its money"
+    //         },
 
-            {
-                id: 2,
-                term: "Liabilities",
-                definition: "You owe! Don’t forget to pay up."
-            },
+    //         {
+    //             id: 1,
+    //             term: "Assets",
+    //             definition: "Benefits you tomorrow by buying it today"
+    //         },
 
-            {
-                id: 3,
-                term: "Balance Sheet",
-                definition: "What the business owns, what the business owes and what the owners get to keep"
-            },
+    //         {
+    //             id: 2,
+    //             term: "Liabilities",
+    //             definition: "You owe! Don’t forget to pay up."
+    //         },
 
-            {
-                id: 4,
-                term: "Income Statement",
-                definition: "Seeing all the money you made be chopped by the money you had to spend to make it."
-            },
+    //         {
+    //             id: 3,
+    //             term: "Balance Sheet",
+    //             definition: "What the business owns, what the business owes and what the owners get to keep"
+    //         },
 
-            {
-                id: 5,
-                term: "Accounting Equation",
-                definition: "Just like 2+2= 4, Liabilities + Equity= Assets"
-            },
+    //         {
+    //             id: 4,
+    //             term: "Income Statement",
+    //             definition: "Seeing all the money you made be chopped by the money you had to spend to make it."
+    //         },
 
-            {
-                id: 6,
-                term: "Stockholders Equity",
-                definition: "How much skin in the game an investor has in a business"
-            },
+    //         {
+    //             id: 5,
+    //             term: "Accounting Equation",
+    //             definition: "Just like 2+2= 4, Liabilities + Equity= Assets"
+    //         },
 
-            {
-                id: 7,
-                term: "Revenue",
-                definition: "A world where money is made and expenses are a figment of your imagination."
-            },
+    //         {
+    //             id: 6,
+    //             term: "Stockholders Equity",
+    //             definition: "How much skin in the game an investor has in a business"
+    //         },
 
-            {
-                id: 8,
-                term: "Expense",
-                definition: "Money spend to operate a business. Usually things you buy that will be used up in a year or less"
-            },
+    //         {
+    //             id: 7,
+    //             term: "Revenue",
+    //             definition: "A world where money is made and expenses are a figment of your imagination."
+    //         },
 
-            {
-                id: 9,
-                term: "Retained Earnings",
-                definition: "A company could give its profit to you but instead will hoard it to itself."
-            },
+    //         {
+    //             id: 8,
+    //             term: "Expense",
+    //             definition: "Money spend to operate a business. Usually things you buy that will be used up in a year or less"
+    //         },
 
-            {
-                id: 10,
-                term: "Accounts Receivable",
-                definition: "Service/Work is completed but instead of being paid now, you’re paid later."
-            },
+    //         {
+    //             id: 9,
+    //             term: "Retained Earnings",
+    //             definition: "A company could give its profit to you but instead will hoard it to itself."
+    //         },
 
-            {
-                id: 11,
-                term: "Accounts Payable",
-                definition: "When work gets do for you but you pay those people later instead of now."
-            },
+    //         {
+    //             id: 10,
+    //             term: "Accounts Receivable",
+    //             definition: "Service/Work is completed but instead of being paid now, you’re paid later."
+    //         },
 
-            {
-                id: 12,
-                term: "COGS( Cost of Goods Sold)",
-                definition: "The money spent to directly make the products you sold. Think the ingredients needed to make a delicious cake."
-            },
+    //         {
+    //             id: 11,
+    //             term: "Accounts Payable",
+    //             definition: "When work gets do for you but you pay those people later instead of now."
+    //         },
 
-            {
-                id: 13,
-                term: "Debit",
-                definition: "A debit INCREASES assets and DECREASES liabilities & equity."
-            },
+    //         {
+    //             id: 12,
+    //             term: "COGS( Cost of Goods Sold)",
+    //             definition: "The money spent to directly make the products you sold. Think the ingredients needed to make a delicious cake."
+    //         },
 
-            {
-                id: 14,
-                term: "Credit",
-                definition: "A credit INCREASES liabilities & equity and  DECREASES asset"
-            }
-        ])
+    //         {
+    //             id: 13,
+    //             term: "Debit",
+    //             definition: "A debit INCREASES assets and DECREASES liabilities & equity."
+    //         },
 
-    const words = dmvDef.map((i) => {
-        return (
-            <li key={i.id}>
-                <h1>
-                    {i.term}
-                </h1>
-                <p>
-                    {i.definition}
-                </p>
-                <button className=".BsArrow-btn " onClick={() => convert(i.id)}>
-                    <BsArrowLeftRight size={20} />
-                </button>
-            </li>
-        )
-    })
+    //         {
+    //             id: 14,
+    //             term: "Credit",
+    //             definition: "A credit INCREASES liabilities & equity and  DECREASES asset"
+    //         }
+    //     ])
+
 
     function convert(id) {
-        const change = dmvDef.map((i) => {
-            return (
-                id === i.id ?
-                    { ...i.id, statues: true }
-                    : { ...i.id, statues: false })
-        })
+        const change = dmvDef.map(i =>
+            id === i.id ?
+                { ...i, statues: false }
+                :
+                { ...i, statues: true }
+
+
+
+            // console.log('some code:', Object.values(i).splice(i, 4))
+            // : null
+
+        )
         setDmvDef(change)
     }
 
 
+    function revert(id) {
+        const change = dmvDef.map(i =>
+            id === i.id ?
+                { ...i, statues: false }
+                :
+                { ...i, statues: true }
+
+        )
+        setDmvDef(change)
+    }
+
     return (
 
-        <Display listItems={words} />
+        <Display dmvDef={dmvDef} convertFun={convert} revertFun={revert} />
 
     )
 }

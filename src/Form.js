@@ -11,7 +11,6 @@ const Form = () => {
     }
     return (
         <form className="form" onSubmit={handleSubmit}>
-
             <textarea type="input" id="input-box"
                 placeholder=' Enter Financial term ex:Stocks'
                 required
