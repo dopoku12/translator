@@ -1,12 +1,17 @@
-@use "./form";
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
 ul {
   @include flex(column);
-  cursor: pointer;
-}
-li {
-  list-style: none;
-
-  &:hover p {
-    box-shadow: 2px 2px 2px 2px;
+  .words {
+    padding-bottom: 5%;
+    h1 {
+      padding-bottom: 2%;
+    }
+    &:hover p {
+      box-shadow: black 2px 2px 2px;
+    }
   }
 }

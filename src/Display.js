@@ -1,13 +1,14 @@
-
 const Display = ({ dmvDef, convertFun }) => {
     return (
         <ul>{
             dmvDef.map((i) => {
                 return (
-                    <li key={i.id}>
+                    <li className="words" key={i.id}>
+
                         <h1>
                             {i.term}
                         </h1>
+
                         <p>
                             {i.statues
                                 ?
@@ -26,11 +27,13 @@ const Display = ({ dmvDef, convertFun }) => {
                                             i.standard
                                     }
                                 </h2>
+
                             </button>
                         }
                     </li>
                 )
             })}
+
         </ul>
     )
 }
