@@ -1,13 +1,13 @@
 @use "./form";
 @use "./display";
-
+@use "./slider";
 * {
   padding: 0%;
   margin: 0%;
 }
 
 .App {
-  background-image: linear-gradient(55deg, #b4f8c8, #a0e7e5 100%);
+  background-image: linear-gradient(55deg, #a0e7e5, #b4f8c8 75%);
   background-repeat: no-repeat;
   background-size: cover;
   main {

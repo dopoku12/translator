@@ -4,32 +4,25 @@ const Display = ({ dmvDef, convertFun }) => {
             dmvDef.map((i) => {
                 return (
                     <li className="words" key={i.id}>
-
-                        <h1>
-                            {i.term}
-                        </h1>
-
                         <p>
-                            {i.statues
-                                ?
-                                i.definition
-                                :
-                                i.dMVDefinition
+                            <h1>
+                                {i.term}
+                            </h1>
+                            {i.statues ? i.definition : i.dMVDefinition}
+                            <br />
+                            <br />
+                            <label className="switch">
+                                <input type='checkbox' id="check"
+                                    className="toggle"
+                                    onClick={() => convertFun(i.id)} />
+                                <span class="slider round">
+                                </span>
+                            </label>
+                            <br />
+                            {
+                                i.statues ? i.dmv : i.standard
                             }
                         </p>
-                        {
-                            <button className=".BsArrow-btn " onClick={() => convertFun(i.id)}>
-                                <h2>
-                                    {
-                                        i.statues ?
-                                            i.dmv
-                                            :
-                                            i.standard
-                                    }
-                                </h2>
-
-                            </button>
-                        }
                     </li>
                 )
             })}
