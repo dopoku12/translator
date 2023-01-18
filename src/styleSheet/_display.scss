@@ -1,17 +1,17 @@
-@mixin flex($direction) {
-  display: flex;
-  flex-direction: $direction;
-}
+// @mixin flex($direction) {
+//   display: flex;
+//   flex-direction: $direction;
+// }
 
-ul {
-  @include flex(column);
-  .words {
-    padding-bottom: 5%;
-    h1 {
-      padding-bottom: 2%;
-    }
-    &:hover p {
-      box-shadow: black 2px 2px 2px;
-    }
-  }
-}
+// ul {
+//   @include flex(column);
+//   .words {
+//     padding-bottom: 5%;
+//     h1 {
+//       padding-bottom: 2%;
+//     }
+//     &:hover p {
+//       box-shadow: black 2px 2px 2px;
+//     }
+//   }
+// }
