@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 // import Form from "./Form";
-import Data from "./components/Data";
+import Display from "./components/Display";
 import Header from "./components/Header";
 import M from "materialize-css";
 
@@ -10,11 +10,11 @@ function App() {
   }, []);
 
   return (
-    <div >
+    <div>
       <Header />
-      <main className="container">
+      <main>
         <section>
-          <Data />
+          <Display />
         </section>
 
       </main>

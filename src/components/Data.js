@@ -1,8 +1,5 @@
 import { useState } from "react";
-import Display from './Display'
-
-
-function Data() {
+function useData() {
     const [dmvDef, setDmvDef] = useState([
         {
             id: 1,
@@ -143,11 +140,16 @@ function Data() {
             dMVDefinition: "The price of coppin a stock at the current moment",
             definition: "Market price refers to the price at which an asset can be bought and sold on the open market. The market price of any given asset is based on current market factors, including supply and demand. As supply decreases and demand increases, the market price of the asset also increases."
         }
-    ].map(i => { return ({ ...i, standard: 'Standard' }) })
-        .map(i => { return ({ ...i, dmv: 'DMV' }) })
-        .map(i => { return ({ ...i, statues: true }) })
-    )
+    ].map(
+        i => {
+            return (
+                {
+                    ...i, standard: 'Standard', dmv: 'DMV', statues: true,
 
+                })
+        })
+
+    )
     // const [standardDef, setStandardDef] = useState(
     //     [
     //         {
@@ -239,41 +241,18 @@ function Data() {
     //             term: "Credit",
     //             definition: "A credit INCREASES liabilities & equity and  DECREASES asset"
     //         }
-    //     ])
+    //     ]))
 
-
-    function convert(id) {
-        const change = dmvDef.map(i =>
-            id === i.id ?
-                { ...i, statues: false }
-                :
-                { ...i, statues: true }
-
-
-
-            // console.log('some code:', Object.values(i).splice(i, 4))
-            // : null
-
-        )
-        setDmvDef(change)
-    }
-
-
-    // function revert(id) {
-    //     const change = dmvDef.map(i =>
-    //         id === i.id ?
-    //             { ...i, statues: false }
-    //             :
-    //             { ...i, statues: true }
-
+    // function init(id) {
+    //     const change = dmvDef.map(i => id === i.id ? i.defState(i) : i
     //     )
     //     setDmvDef(change)
-    // }revertFun={revert}
+    // }
+    let n = 0
+    console.log('statues:', dmvDef[0].statues)
+    console.log('white:', n++, dmvDef)
 
-    return (
 
-        <Display dmvDef={dmvDef} convertFun={convert} />
-
-    )
+    return { dmvDef }
 }
-export default Data;
+export default useData;

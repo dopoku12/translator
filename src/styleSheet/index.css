@@ -45,13 +45,18 @@ form .BsArrow-btn {
     font-size: 1.2em;
   }
 }
+blockquote {
+  border-left: white solid 5px !important;
+}
+
+.types {
+  color: black;
+}
+
 body {
-  background-image: linear-gradient(55deg, #a0e7e5, #b4f8c8 75%);
+  background-image: linear-gradient(55deg, #a0e7e5, #71c78b 75%);
   background-repeat: no-repeat;
   background-size: cover;
-}
-li {
-  list-style: none;
 }
 
 /*# sourceMappingURL=index.css.map */
