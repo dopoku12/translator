@@ -1,6 +1,6 @@
 import { useState } from "react";
 function useData() {
-    const [dmvDef, setDmvDef] = useState([
+    const [words, setDmvDef] = useState([
         {
             id: 1,
             term: "bear market",
@@ -140,15 +140,11 @@ function useData() {
             dMVDefinition: "The price of coppin a stock at the current moment",
             definition: "Market price refers to the price at which an asset can be bought and sold on the open market. The market price of any given asset is based on current market factors, including supply and demand. As supply decreases and demand increases, the market price of the asset also increases."
         }
-    ].map(
-        i => {
-            return (
-                {
-                    ...i, standard: 'Standard', dmv: 'DMV', statues: true,
-
-                })
+    ].map(i => {
+        return ({
+            ...i, standard: 'Standard', dmv: 'DMV', statues: true,
         })
-
+    })
     )
     // const [standardDef, setStandardDef] = useState(
     //     [
@@ -243,16 +239,16 @@ function useData() {
     //         }
     //     ]))
 
-    // function init(id) {
-    //     const change = dmvDef.map(i => id === i.id ? i.defState(i) : i
-    //     )
-    //     setDmvDef(change)
-    // }
+    function init(id) {
+        const change = words.map(i => id === i.id ? { ...i, statues: false } : i
+        )
+        console.log('change:', change)
+        setDmvDef(change)
+    }
     let n = 0
-    console.log('statues:', dmvDef[0].statues)
-    console.log('white:', n++, dmvDef)
+    console.log('statues:')
+    console.log('test:', n++, words)
 
-
-    return { dmvDef }
+    return { words, setDmvDef, init }
 }
-export default useData;
+export default useData

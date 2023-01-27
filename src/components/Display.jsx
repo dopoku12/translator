@@ -1,9 +1,17 @@
 import useData from './Data'
 const Display = () => {
-    const { dmvDef } = useData()
+    const { words, setDmvDef, init } = useData()
+
     return (
         <ul className="collapsible popout ">{
-            dmvDef.map((i) => {
+            words.map((i) => {
+                // const init = () => {
+                //     console.log('init func:',
+                //         i.statues ?
+                //             { ...i, statues: false }
+                //             : { ...i, statues: true }
+                //     )
+                // }
                 return (
                     <li className="" key={i.id}>
 
@@ -17,12 +25,7 @@ const Display = () => {
                                     {i.statues ? i.definition : i.dMVDefinition}
                                 </p>
                             </blockquote>
-                            <div className="switch" onClick={
-                                () =>
-                                    i.statues ?
-                                        console.log({ ...i })
-                                        : { ...i, statues: true }
-                            }
+                            <div className="switch" onClick={() => init(i.id)}
                             >
                                 <label>
                                     <span className="types">
