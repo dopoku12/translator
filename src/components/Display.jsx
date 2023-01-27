@@ -1,6 +1,6 @@
 import useData from './Data'
 const Display = () => {
-    const { words, setDmvDef, init } = useData()
+    const { words, init } = useData()
 
     return (
         <ul className="collapsible popout ">{

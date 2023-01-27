@@ -249,6 +249,6 @@ function useData() {
     console.log('statues:')
     console.log('test:', n++, words)
 
-    return { words, setDmvDef, init }
+    return { words, init }
 }
 export default useData
