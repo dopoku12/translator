@@ -1,26 +1,31 @@
 import { useEffect } from "react";
-// import Form from "./Form";
-import Display from "./components/Display";
-import Header from "./components/Header";
 import M from "materialize-css";
-
+import { Routes, Route } from 'react-router-dom';
+// import Form from "./Form";
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import Words from "./pages/Words";
+import AboutMe from './pages/AboutMe';
 function App() {
   useEffect(() => {
     M.AutoInit();
   }, []);
 
   return (
-    <div>
-      <Header />
-      <main>
-        <section>
-          <Display />
-        </section>
+    <>
+      <Nav />
+      <div>
 
-      </main>
-      <footer>
-      </footer>
-    </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Words" element={<Words />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+        </Routes>
+
+        <footer>
+        </footer>
+      </div>
+    </>
   );
 }
 

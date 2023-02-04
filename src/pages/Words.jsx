@@ -1,4 +1,4 @@
-import useData from './Data'
+import useData from '../components/Data'
 const Display = () => {
     const { words, init } = useData()
 
