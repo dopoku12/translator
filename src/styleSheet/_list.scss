@@ -1,0 +1,15 @@
+// @mixin flex($direction) {
+//   display: flex;
+//   flex-direction: $direction;
+// }
+.li-contain {
+  .words-contain {
+    blockquote {
+      border-left: white solid 5px !important;
+    }
+  }
+
+  .types {
+    color: black;
+  }
+}

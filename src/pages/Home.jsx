@@ -1,7 +1,9 @@
+import SVGComponent from "../components/SVGComponent";
+
 const Home = () => {
     return (
         <div>
-            home
+            <SVGComponent />
         </div>
     );
 }

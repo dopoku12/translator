@@ -12,7 +12,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="container">
       <Nav />
       <div>
 
@@ -25,7 +25,7 @@ function App() {
         <footer>
         </footer>
       </div>
-    </>
+    </div>
   );
 }
 

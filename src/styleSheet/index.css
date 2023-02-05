@@ -45,18 +45,22 @@ form .BsArrow-btn {
     font-size: 1.2em;
   }
 }
-blockquote {
+.li-contain .words-contain blockquote {
   border-left: white solid 5px !important;
 }
-
-.types {
+.li-contain .types {
   color: black;
 }
 
 body {
-  background-image: linear-gradient(55deg, #a0e7e5, #71c78b 75%);
+  background-image: linear-gradient(to bottom right, #25dd96 5%, #25ddcf 30%, #04a4d4);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
+  color: #31322f;
+}
+
+nav {
+  background-color: transparent !important;
 }
 
 /*# sourceMappingURL=index.css.map */

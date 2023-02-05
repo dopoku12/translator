@@ -1,14 +1,19 @@
 @use "./form";
-@use "./display";
+@use "./list";
 @use "./slider";
+@import "./utils";
 
 body {
-  background-color: #eeede7;
-
-  main {
-    // background-color: whitesmoke;
-  }
+  background-image: linear-gradient(
+    to bottom right,
+    $primary 5%,
+    $spray 30%,
+    $secondary
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $textColor;
 }
-
 nav {
+  background-color: transparent !important;
 }
