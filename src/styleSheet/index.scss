@@ -3,13 +3,12 @@
 @use "./slider";
 @import "./utils";
 
+* {
+  color: $textColor !important;
+}
+
 body {
-  background-image: linear-gradient(
-    to bottom right,
-    $primary 5%,
-    $spray 30%,
-    $secondary
-  );
+  background-color: $primary;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: $textColor;

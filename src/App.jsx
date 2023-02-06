@@ -12,9 +12,9 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
+    <div >
       <Nav />
-      <div>
+      <div className="container">
 
         <Routes>
           <Route path="/" element={<Home />} />

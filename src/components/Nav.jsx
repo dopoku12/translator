@@ -2,9 +2,13 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <nav className="z-depth-0 ">
+        <nav className="z-depth-0  ">
             <div className="nav-wrapper ">
-                <Link to="/" className="brand-logo left">That's Clearly Wealth! </Link>
+                <Link to="/" className="brand-logo left">
+                    <span  >
+                        That's Clearly Wealth!
+                    </span>
+                </Link>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li>
                         <Link to="/">Home</Link>

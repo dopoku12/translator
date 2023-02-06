@@ -52,8 +52,12 @@ form .BsArrow-btn {
   color: black;
 }
 
+* {
+  color: #31322f !important;
+}
+
 body {
-  background-image: linear-gradient(to bottom right, #25dd96 5%, #25ddcf 30%, #04a4d4);
+  background-color: #e3e6de;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #31322f;
