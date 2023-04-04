@@ -3,16 +3,18 @@
 @use "./slider";
 @import "./utils";
 
-* {
-  color: $textColor !important;
-}
-
 body {
-  background-color: $primary;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: $textColor;
 }
 nav {
   background-color: transparent !important;
+  color: black;
+  border-bottom: solid 3px black;
+}
+
+.neo-button {
+  @include neo-bru($secondary);
+  border-bottom: none;
 }

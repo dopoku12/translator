@@ -3,7 +3,7 @@ const Display = () => {
     const { words, init } = useData()
 
     return (
-        <ul className="li-contain  collapsible popout">{
+        <ul className="li-contain  collapsible m-0 popout">{
             words.map((i) => {
                 // const init = () => {
                 //     console.log('init func:',
@@ -13,13 +13,13 @@ const Display = () => {
                 //     )
                 // }
                 return (
-                    <li className="words-contain" key={i.id}>
+                    <li className="words-contain " key={i.id}>
 
-                        <h4 className="collapsible-header">
+                        <h4 className=" collapsible-header neo-button green-text  ">
                             {i.term}
                         </h4>
 
-                        <div className="collapsible-body">
+                        <div className="collapsible-body neo-button">
                             <blockquote>
                                 <p>
                                     {i.statues ? i.definition : i.dMVDefinition}

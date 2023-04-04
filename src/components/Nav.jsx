@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <nav className="z-depth-0  ">
-            <div className="nav-wrapper ">
+        <nav className=" ">
+            <div className="nav-wrapper  ">
                 <Link to="/" className="brand-logo left">
-                    <span  >
+                    <span className="black-text"  >
                         That's Clearly Wealth!
                     </span>
                 </Link>

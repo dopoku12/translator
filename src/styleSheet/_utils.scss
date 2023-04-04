@@ -1,6 +1,11 @@
 $primary: #e3e6de;
-$secondary: #25dd96;
+$secondary: #4caf50;
 $spray: #25ddcf;
 $textColor: #31322f;
 
 //skin:#a0616a
+@mixin neo-bru($color) {
+  border: solid $color 2px !important;
+  box-shadow: $color 10px 10px 1px;
+  z-index: 10px;
+}
