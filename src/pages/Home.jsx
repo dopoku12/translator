@@ -1,9 +1,17 @@
-import SVGComponent from "../components/SVGComponent";
+
+import SvgOne from "../components/SVGComponent";
 
 const Home = () => {
     return (
-        <div>
-            <SVGComponent />
+        <div className="row">
+            <div className="col s1">
+                <p>
+                    hello world
+                </p>
+            </div>
+            <div className="col s1">
+                <SvgOne />
+            </div>
         </div>
     );
 }

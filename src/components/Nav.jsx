@@ -2,22 +2,23 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <nav className=" ">
-            <div className="nav-wrapper  ">
+        <nav className="">
+            <div className="">
                 <Link to="/" className="brand-logo left">
                     <span className="black-text"  >
                         That's Clearly Wealth!
                     </span>
                 </Link>
-                <ul id="nav-mobile" className="right hide-on-med-and-down">
+                <ul className="right">
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link className="green-text" to="/">
+                            Home
+                        </Link>
                     </li>
-                    <li>
-                        <Link to="/Words">Definitions</Link>
-                    </li>
-                    <li className="active">
-                        <Link to="/AboutMe">AboutMe</Link>
+                    <li >
+                        <Link className="green-text" to="/Words">
+                            Definitions
+                        </Link>
                     </li>
                 </ul>
             </div>

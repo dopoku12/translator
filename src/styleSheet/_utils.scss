@@ -3,6 +3,10 @@ $secondary: #4caf50;
 $spray: #25ddcf;
 $textColor: #31322f;
 
+svg {
+  border: 12px solid red;
+}
+
 //skin:#a0616a
 @mixin neo-bru($color) {
   border: solid $color 2px !important;

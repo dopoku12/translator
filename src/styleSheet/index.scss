@@ -4,13 +4,15 @@
 @import "./utils";
 
 body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: $textColor;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-color: white;
 }
 nav {
   background-color: transparent !important;
   color: black;
+  border-top-right-radius: 15%;
+  border-top-left-radius: 15%;
   border-bottom: solid 3px black;
 }
 

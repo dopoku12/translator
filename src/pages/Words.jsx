@@ -15,7 +15,7 @@ const Display = () => {
                 return (
                     <li className="words-contain " key={i.id}>
 
-                        <h4 className=" collapsible-header neo-button green-text  ">
+                        <h4 className=" collapsible-header waves-effect waves-green neo-button green-text  ">
                             {i.term}
                         </h4>
 

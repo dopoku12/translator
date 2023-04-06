@@ -52,27 +52,24 @@ form .BsArrow-btn {
   color: black;
 }
 
-svg {
-  border: 12px solid red;
-}
-
 body {
-  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #31322f;
 }
 
 nav {
   background-color: transparent !important;
   color: black;
-  border-top-right-radius: 15%;
-  border-top-left-radius: 15%;
   border-bottom: solid 3px black;
 }
 
 .neo-button {
   border: solid #4caf50 2px !important;
+  border-radius: 50% !important;
   box-shadow: #4caf50 10px 10px 1px;
   z-index: 10px;
   border-bottom: none;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=indec.css.map */
