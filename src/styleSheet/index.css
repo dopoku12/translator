@@ -46,7 +46,7 @@ form .BsArrow-btn {
   }
 }
 .li-contain .words-contain blockquote {
-  border-left: white solid 5px !important;
+  border-left: #4caf50 solid 5px !important;
 }
 .li-contain .types {
   color: black;
@@ -54,10 +54,6 @@ form .BsArrow-btn {
 
 svg {
   border: 12px solid red;
-}
-
-body {
-  background-color: white;
 }
 
 nav {

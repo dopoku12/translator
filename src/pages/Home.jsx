@@ -1,17 +1,20 @@
-
-import SvgOne from "../components/SVGComponent";
-
+import AboutMe from "./AboutMe";
 const Home = () => {
     return (
-        <div className="row">
-            <div className="col s1">
-                <p>
-                    hello world
-                </p>
-            </div>
-            <div className="col s1">
-                <SvgOne />
-            </div>
+        <div cl>
+            <main className="row">
+                <div className="col s1">
+                    <p>
+                        hello world
+                    </p>
+                    <div className="col s1">
+                    </div>
+
+                </div>
+            </main>
+            <footer>
+                <AboutMe />
+            </footer>
         </div>
     );
 }
