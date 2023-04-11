@@ -9,7 +9,7 @@ body {
   // background-color: white;
 }
 nav {
-  background-color: transparent !important;
+  background-color: transparent;
   color: black;
   border-top-right-radius: 15%;
   border-top-left-radius: 15%;
@@ -18,5 +18,11 @@ nav {
 
 .neo-button {
   @include neo-bru($secondary);
-  border-bottom: none;
+}
+
+.neo-panel {
+  margin-top: 10%;
+  border: solid $secondary 2px;
+  box-shadow: $secondary 10px 10px;
+  z-index: 10px;
 }

@@ -5,58 +5,58 @@ import {
     AccordionItem,
     AccordionButton,
     AccordionPanel,
-    AccordionIcon,
+    Box, Container,
+    FormControl, FormLabel,
+    Heading,
+    Switch,
+    Text,
 } from '@chakra-ui/react'
 const Display = () => {
     const { words, init } = useData()
 
 
     return (
-        <div className="container">
-            <ul className=" li-contain  collapsible popout"
-                data-collapsible="accordion">{
-                    words.map((i) => {
-                        // const init = () => {
-                        //     console.log('init func:',
-                        //         i.statues ?
-                        //             { ...i, statues: false }
-                        //             : { ...i, statues: true }
-                        //     )
-                        // }
-                        return (
-                            <li className="words-contain " key={i.id}>
+        <Container >
+            {
+                words.map((i) => {
+                    return (
+                        <Accordion allowToggle key={i.id}>
+                            <AccordionItem >
 
-                                <h4 className=" collapsible-header waves-effect waves-green neo-button green-text  ">
-                                    {i.term}
-                                </h4>
+                                <AccordionButton className="neo-button" >
 
-                                <div className="collapsible-body neo-button">
-                                    <blockquote>
-                                        <p>
-                                            {i.statues ? i.definition : i.dMVDefinition}
-                                        </p>
-                                    </blockquote>
-                                    <div className="switch" onClick={() => init(i.id)}
+                                    <Heading color={'green.500'}
+
                                     >
-                                        <label>
-                                            <span className="types">
+                                        {i.term}
+                                    </Heading>
+
+                                </AccordionButton>
+
+                                <AccordionPanel className='neo-panel'>
+                                    <Box >
+                                        <Text color={'green.500'}>
+                                            {i.statues ? i.definition : i.dMVDefinition}
+                                        </Text>
+
+                                        <FormControl>
+                                            <FormLabel htmlFor='terms' >
                                                 {i.standard}
-                                            </span>
-                                            <input type="checkbox" />
-                                            <span className="lever"></span>
-                                            <span className="types">
+                                                <Switch id='terms' color='brand.900' />
                                                 {i.dmv}
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <br />
-                                    <br />
-                                </div>
-                            </li>
-                        )
-                    })}
-            </ul>
-        </div>
+                                            </FormLabel>
+                                        </FormControl>
+
+                                    </Box>
+                                </AccordionPanel>
+                                <br />
+                                <br />
+
+                            </AccordionItem>
+                        </Accordion>
+                    )
+                })}
+        </Container>
     )
 }
 
