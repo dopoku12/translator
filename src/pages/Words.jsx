@@ -21,11 +21,18 @@ const Display = () => {
                 words.map((i) => {
                     return (
                         <Accordion allowToggle key={i.id}>
-                            <AccordionItem >
+                            <AccordionItem border='none'>
 
-                                <AccordionButton className="neo-button" >
+                                <AccordionButton
+                                    marginTop={10}
+                                    borderRadius='10px'
+                                    border='2px'
+                                    borderStyle='solid'
+                                    borderColor='brand.900'
+                                    boxShadow='4px 5px #4caf50'
+                                    zIndex='-1px' >
 
-                                    <Heading color={'green.500'}
+                                    <Heading color={'brand.900'}
 
                                     >
                                         {i.term}
@@ -33,30 +40,37 @@ const Display = () => {
 
                                 </AccordionButton>
 
-                                <AccordionPanel className='neo-panel'>
+                                <AccordionPanel
+
+                                    margin={5}
+                                    border='2px'
+                                    borderStyle='solid'
+                                    borderColor='brand.900'
+                                    boxShadow='5px 5px #4caf50'
+                                    zIndex='-1px'
+                                >
                                     <Box >
-                                        <Text color={'green.500'}>
+                                        <Text color={'brand.900'}>
                                             {i.statues ? i.definition : i.dMVDefinition}
                                         </Text>
 
-                                        <FormControl>
-                                            <FormLabel htmlFor='terms' >
+                                        <FormControl marginTop={5}>
+                                            <FormLabel color='brand.900' htmlFor='terms' >
                                                 {i.standard}
-                                                <Switch id='terms' color='brand.900' />
+                                                <Switch id='terms' colorScheme='green.500' />
                                                 {i.dmv}
                                             </FormLabel>
                                         </FormControl>
 
                                     </Box>
                                 </AccordionPanel>
-                                <br />
-                                <br />
+
 
                             </AccordionItem>
                         </Accordion>
                     )
                 })}
-        </Container>
+        </Container >
     )
 }
 

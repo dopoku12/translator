@@ -1,12 +1,13 @@
+import { Button } from "@chakra-ui/react";
 import AboutMe from "./AboutMe";
 const Home = () => {
     return (
         <div cl>
             <main className="row">
                 <div className="col s1">
-                    <p>
+                    <Button variant={'neo'}>
                         hello world
-                    </p>
+                    </Button>
                     <div className="col s1">
                     </div>
 
