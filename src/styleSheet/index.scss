@@ -1,7 +1,4 @@
 @use "./form";
-@use "./list";
-@use "./slider";
-@import "./utils";
 
 body {
   // background-repeat: no-repeat;
@@ -14,15 +11,4 @@ nav {
   border-top-right-radius: 15%;
   border-top-left-radius: 15%;
   border-bottom: solid 3px black;
-}
-
-.neo-button {
-  @include neo-bru($secondary);
-}
-
-.neo-panel {
-  margin-top: 10%;
-  border: solid $secondary 2px;
-  box-shadow: $secondary 10px 10px;
-  z-index: 10px;
 }

@@ -53,17 +53,4 @@ nav {
   border-bottom: solid 3px black;
 }
 
-.neo-button {
-  border: solid #4caf50 2px;
-  box-shadow: #4caf50 10px 10px 1px;
-  z-index: 10px;
-}
-
-.neo-panel {
-  margin-top: 10%;
-  border: solid #4caf50 2px;
-  box-shadow: #4caf50 10px 10px;
-  z-index: 10px;
-}
-
 /*# sourceMappingURL=index.css.map */

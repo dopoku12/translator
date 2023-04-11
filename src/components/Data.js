@@ -1,6 +1,5 @@
-import { useState } from "react";
 function useData() {
-    const [words, setDmvDef] = useState([
+    const words = [
         {
             id: 1,
             term: "bear market",
@@ -145,7 +144,7 @@ function useData() {
             ...i, standard: 'Standard', dmv: 'DMV', statues: true,
         })
     })
-    )
+
     // const [standardDef, setStandardDef] = useState(
     //     [
     //         {
@@ -239,16 +238,6 @@ function useData() {
     //         }
     //     ]))
 
-    function init(id) {
-        const change = words.map(i => id === i.id ? { ...i, statues: false } : i
-        )
-        console.log('change:', change)
-        setDmvDef(change)
-    }
-    let n = 0
-    console.log('statues:')
-    console.log('test:', n++, words)
-
-    return { words, init }
+    return { words }
 }
 export default useData

@@ -29,19 +29,15 @@ const Display = () => {
                                     border='2px'
                                     borderStyle='solid'
                                     borderColor='brand.900'
-                                    boxShadow='4px 5px #4caf50'
+                                    boxShadow='5px 5px #4caf50'
                                     zIndex='-1px' >
 
-                                    <Heading color={'brand.900'}
-
-                                    >
+                                    <Heading color={'brand.900'}>
                                         {i.term}
                                     </Heading>
-
                                 </AccordionButton>
 
                                 <AccordionPanel
-
                                     margin={5}
                                     border='2px'
                                     borderStyle='solid'
@@ -57,7 +53,7 @@ const Display = () => {
                                         <FormControl marginTop={5}>
                                             <FormLabel color='brand.900' htmlFor='terms' >
                                                 {i.standard}
-                                                <Switch id='terms' colorScheme='green.500' />
+                                                <Switch id='terms' colorScheme='green' />
                                                 {i.dmv}
                                             </FormLabel>
                                         </FormControl>
