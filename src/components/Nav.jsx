@@ -1,27 +1,27 @@
+import { Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
         <nav className="">
-            <div className="">
-                <Link to="/" className="brand-logo left">
-                    <span className="black-text"  >
-                        That's Clearly Wealth!
-                    </span>
-                </Link>
-                <ul className="right">
-                    <li>
-                        <Link className="green-text" to="/">
-                            Home
-                        </Link>
-                    </li>
-                    <li >
-                        <Link className="green-text" to="/Words">
-                            Definitions
-                        </Link>
-                    </li>
-                </ul>
-            </div>
+            <Grid templateColumns='repeat(2,1fr)'>
+
+                <GridItem >
+                    <Link to="/" >
+                        <Text fontSize='2xl'
+                            fontWeight='bold'
+                        >
+                            That's<Box color='brand.900' as="span"> Clearly Wealth! </Box>
+                        </Text>
+                    </Link>
+                </GridItem>
+
+                <GridItem >
+                    <Link to="/Words">
+                        Definitions
+                    </Link>
+                </GridItem>
+            </Grid>
         </nav>
     );
 }

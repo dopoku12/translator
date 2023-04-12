@@ -5,58 +5,68 @@ import {
     AccordionItem,
     AccordionButton,
     AccordionPanel,
-    AccordionIcon,
+    Box, Container,
+    FormControl, FormLabel,
+    Heading,
+    Switch,
+    Text,
 } from '@chakra-ui/react'
 const Display = () => {
     const { words, init } = useData()
 
 
     return (
-        <div className="container">
-            <ul className=" li-contain  collapsible popout"
-                data-collapsible="accordion">{
-                    words.map((i) => {
-                        // const init = () => {
-                        //     console.log('init func:',
-                        //         i.statues ?
-                        //             { ...i, statues: false }
-                        //             : { ...i, statues: true }
-                        //     )
-                        // }
-                        return (
-                            <li className="words-contain " key={i.id}>
+        <Container >
+            {
+                words.map((i) => {
+                    return (
+                        <Accordion allowToggle key={i.id}>
+                            <AccordionItem border='none'>
 
-                                <h4 className=" collapsible-header waves-effect waves-green neo-button green-text  ">
-                                    {i.term}
-                                </h4>
+                                <AccordionButton
+                                    marginTop={10}
+                                    borderRadius='10px'
+                                    border='2px'
+                                    borderStyle='solid'
+                                    borderColor='brand.900'
+                                    boxShadow='5px 5px #4caf50'
+                                    zIndex='-1px' >
 
-                                <div className="collapsible-body neo-button">
-                                    <blockquote>
-                                        <p>
+                                    <Heading color={'brand.900'}>
+                                        {i.term}
+                                    </Heading>
+                                </AccordionButton>
+
+                                <AccordionPanel
+                                    margin={5}
+                                    border='2px'
+                                    borderStyle='solid'
+                                    borderColor='brand.900'
+                                    boxShadow='5px 5px #4caf50'
+                                    zIndex='-1px'
+                                >
+                                    <Box >
+                                        <Text color={'brand.900'}>
                                             {i.statues ? i.definition : i.dMVDefinition}
-                                        </p>
-                                    </blockquote>
-                                    <div className="switch" onClick={() => init(i.id)}
-                                    >
-                                        <label>
-                                            <span className="types">
+                                        </Text>
+
+                                        <FormControl marginTop={5}>
+                                            <FormLabel color='brand.900' htmlFor='terms' >
                                                 {i.standard}
-                                            </span>
-                                            <input type="checkbox" />
-                                            <span className="lever"></span>
-                                            <span className="types">
+                                                <Switch id='terms' colorScheme='green' />
                                                 {i.dmv}
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <br />
-                                    <br />
-                                </div>
-                            </li>
-                        )
-                    })}
-            </ul>
-        </div>
+                                            </FormLabel>
+                                        </FormControl>
+
+                                    </Box>
+                                </AccordionPanel>
+
+
+                            </AccordionItem>
+                        </Accordion>
+                    )
+                })}
+        </Container >
     )
 }
 

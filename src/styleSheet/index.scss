@@ -1,22 +1,15 @@
 @use "./form";
-@use "./list";
-@use "./slider";
-@import "./utils";
 
 body {
   // background-repeat: no-repeat;
   // background-attachment: fixed;
   // background-color: white;
 }
+
 nav {
-  background-color: transparent !important;
+  background-color: transparent;
   color: black;
   border-top-right-radius: 15%;
   border-top-left-radius: 15%;
   border-bottom: solid 3px black;
-}
-
-.neo-button {
-  @include neo-bru($secondary);
-  border-bottom: none;
 }

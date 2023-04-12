@@ -45,30 +45,12 @@ form .BsArrow-btn {
     font-size: 1.2em;
   }
 }
-.li-contain .words-contain blockquote {
-  border-left: #4caf50 solid 5px !important;
-}
-.li-contain .types {
-  color: black;
-}
-
-svg {
-  border: 12px solid red;
-}
-
 nav {
-  background-color: transparent !important;
+  background-color: transparent;
   color: black;
   border-top-right-radius: 15%;
   border-top-left-radius: 15%;
   border-bottom: solid 3px black;
-}
-
-.neo-button {
-  border: solid #4caf50 2px !important;
-  box-shadow: #4caf50 10px 10px 1px;
-  z-index: 10px;
-  border-bottom: none;
 }
 
 /*# sourceMappingURL=index.css.map */
