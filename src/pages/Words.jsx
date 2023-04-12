@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import useData from '../components/Data'
 import {
     Accordion,

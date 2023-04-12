@@ -1,4 +1,4 @@
-import { Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
+import { Grid, GridItem, Text, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
