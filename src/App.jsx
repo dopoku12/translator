@@ -36,8 +36,6 @@ function App() {
     <ChakraProvider theme={theme}>
       <div >
         <Nav />
-
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Words" element={<Words />} />
