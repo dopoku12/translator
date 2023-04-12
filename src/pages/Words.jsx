@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import useData from '../components/Data'
 import {
     Accordion,
@@ -12,7 +11,7 @@ import {
     Text,
 } from '@chakra-ui/react'
 const Display = () => {
-    const { words, init } = useData()
+    const { words, } = useData()
 
 
     return (

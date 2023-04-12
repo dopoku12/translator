@@ -1,4 +1,4 @@
-import { Box, Button, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Button, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 import { FaDollarSign } from 'react-icons/fa'
 import AboutMe from "./AboutMe";
 const Home = () => {
