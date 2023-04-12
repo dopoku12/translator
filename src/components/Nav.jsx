@@ -1,4 +1,4 @@
-import { Grid, GridItem, Heading } from "@chakra-ui/react";
+import { Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
@@ -8,9 +8,11 @@ const Nav = () => {
 
                 <GridItem >
                     <Link to="/" >
-                        <Heading fontSize='3xl'>
-                            That's Clearly Wealth!
-                        </Heading>
+                        <Text fontSize='2xl'
+                            fontWeight='bold'
+                        >
+                            That's<Box color='brand.900' as="span"> Clearly Wealth! </Box>
+                        </Text>
                     </Link>
                 </GridItem>
 

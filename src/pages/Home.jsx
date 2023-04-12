@@ -10,7 +10,7 @@ const Home = () => {
                     gap={3}>
                     <GridItem colSpan={2}>
                         <Heading>
-                            Welcome to that's Clearly Wealth!
+                            Welcome to that's  Clearly Wealth!
                         </Heading>
                     </GridItem>
 
